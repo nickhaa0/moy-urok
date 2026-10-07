@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Мой урок</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+
+
+<header class="header">
+
+    <div class="container header-inner">
+
+
+
+        <a href="#" class="logo">
+
+            <span class="logo-icon">✦</span>
+
+            Мой урок
+
+        </a>
+
+
+
+        <nav class="nav">
+
+            <a href="#today">Сегодня</a>
+
+            <a href="#schedule">Расписание</a>
+
+            <a href="#important">Важно</a>
+
+        </nav>
+
+
+
+    </div>
+
+</header>
+
+
+
+
+
+<main>
+
+
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+
+
+            <div class="hero-text">
+
+
+
+                <div class="class-badge">
+
+                    10 класс · 2026/27
+
+                </div>
+
+
+
+                <h1>
+
+                    Учёба становится
+
+                    <span>проще.</span>
+
+                </h1>
+
+
+
+                <p>
+
+                    Твоё расписание, домашние задания и важные
+
+                    школьные дела — всё в одном уютном месте.
+
+                </p>
+
+
+
+                <a href="#schedule" class="primary-btn">
+
+                    Открыть расписание ↓
+
+                </a>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="hero-card">
+
+
+
+                <div class="mini-top">
+
+                    <span>Сегодня</span>
+
+                    <span id="heroDate"></span>
+
+                </div>
+
+
+
+                <div class="hero-today">
+
+
+
+                    <div>
+
+                        <small>Ближайший урок</small>
+
+                        <strong>Математика</strong>
+
+                    </div>
+
+
+
+                    <div class="lesson-time">
+
+                        09:00
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="progress-info">
+
+                    <span>Прогресс на сегодня</span>
+
+                    <b id="heroProgress">0%</b>
+
+                </div>
+
+
+
+                <div class="progress">
+
+                    <div
+
+                        class="progress-fill"
+
+                        id="heroProgressBar">
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="section" id="today">
+
+
+
+        <div class="container">
+
+
+
+            <div class="section-heading">
+
+
+
+                <div>
+
+                    <span class="eyebrow">
+
+                        ТВОЙ ДЕНЬ
+
+                    </span>
+
+
+
+                    <h2>Сегодня</h2>
+
+                </div>
+
+
+
+                <div
+
+                    class="today-date"
+
+                    id="todayDate">
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="today-grid">
+
+
+
+                <div class="today-card">
+
+
+
+                    <span class="muted">
+
+                        Заданий выполнено
+
+                    </span>
+
+
+
+                    <div
+
+                        class="big-number"
+
+                        id="completedCount">
+
+                        0/4
+
+                    </div>
+
+
+
+                    <div class="small-progress">
+
+                        <div id="completedProgress"></div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="today-card">
+
+
+
+                    <span class="muted">
+
+                        Самостоятельная
+
+                    </span>
+
+
+
+                    <h3>
+
+                        Алгебра
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Повторить квадратные уравнения
+
+                    </p>
+
+
+
+                    <span class="tag green">
+
+                        Завтра
+
+                    </span>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="today-card">
+
+
+
+                    <span class="muted">
+
+                        Хорошего дня!
+
+                    </span>
+
+
+
+                    <h3>
+
+                        Всё получится ♡
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Проверь задания и не забудь
+
+                        отметить выполненные.
+
+                    </p>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <section
+
+        class="section schedule-section"
+
+        id="schedule">
+
+
+
+        <div class="container">
+
+
+
+            <div class="section-heading">
+
+
+
+                <div>
+
+                    <span class="eyebrow">
+
+                        10 КЛАСС
+
+                    </span>
+
+
+
+                    <h2>
+
+                        Моё расписание
+
+                    </h2>
+
+                </div>
+
+
+
+                <button
+
+                    class="add-btn"
+
+                    id="openModal">
+
+
+
+                    + Добавить урок
+
+
+
+                </button>
+
+
+
+            </div>
+
+
+
+
+
+            <div
+
+                class="schedule"
+
+                id="scheduleList">
+
+
+
+
+
+                <article class="lesson-card">
+
+
+
+                    <div class="lesson-number">
+
+                        01
+
+                    </div>
+
+
+
+                    <div class="lesson-info">
+
+
+
+                        <div class="lesson-top">
+
+
+
+                            <span
+
+                                class="subject pink-subject">
+
+                                Математика
+
+                            </span>
+
+
+
+                            <span class="lesson-time-card">
+
+                                09:00 — 09:45
+
+                            </span>
+
+
+
+                        </div>
+
+
+
+                        <h3>
+
+                            Алгебра
+
+                        </h3>
+
+
+
+                        <p>
+
+                            Повторить квадратные уравнения.
+
+                        </p>
+
+
+
+                        <span class="tag green">
+
+                            Самостоятельная
+
+                        </span>
+
+
+
+                    </div>
+
+
+
+
+
+                    <label class="check">
+
+
+
+                        <input
+
+                            type="checkbox"
+
+                            class="task-check">
+
+
+
+                        <span></span>
+
+
+
+                    </label>
+
+
+
+                </article>
+
+
+
+
+
+                <article class="lesson-card">
+
+
+
+                    <div class="lesson-number">
+
+                        02
+
+                    </div>
+
+
+
+                    <div class="lesson-info">
+
+
+
+                        <div class="lesson-top">
+
+
+
+                            <span
+
+                                class="subject cream-subject">
+
+                                Русский язык
+
+                            </span>
+
+
+
+                            <span class="lesson-time-card">
+
+                                10:00 — 10:45
+
+                            </span>
+
+
+
+                        </div>
+
+
+
+                        <h3>
+
+                            Русский язык
+
+                        </h3>
+
+
+
+                        <p>
+
+                            Выполнить упражнение 156.
+
+                        </p>
+
+
+
+                    </div>
+
+
+
+
+
+                    <label class="check">
+
+
+
+                        <input
+
+                            type="checkbox"
+
+                            class="task-check">
+
+
+
+                        <span></span>
+
+
+
+                    </label>
+
+
+
+                </article>
+
+
+
+
+
+                <article class="lesson-card">
+
+
+
+                    <div class="lesson-number">
+
+                        03
+
+                    </div>
+
+
+
+                    <div class="lesson-info">
+
+
+
+                        <div class="lesson-top">
+
+
+
+                            <span
+
+                                class="subject green-subject">
+
+                                История
+
+                            </span>
+
+
+
+                            <span class="lesson-time-card">
+
+                                11:00 — 11:45
+
+                            </span>
+
+
+
+                        </div>
+
+
+
+                        <h3>
+
+                            История
+
+                        </h3>
+
+
+
+                        <p>
+
+                            Прочитать параграф 12.
+
+                        </p>
+
+
+
+                    </div>
+
+
+
+
+
+                    <label class="check">
+
+
+
+                        <input
+
+                            type="checkbox"
+
+                            class="task-check">
+
+
+
+                        <span></span>
+
+
+
+                    </label>
+
+
+
+                </article>
+
+
+
+
+
+                <article class="lesson-card">
+
+
+
+                    <div class="lesson-number">
+
+                        04
+
+                    </div>
+
+
+
+                    <div class="lesson-info">
+
+
+
+                        <div class="lesson-top">
+
+
+
+                            <span
+
+                                class="subject blue-subject">
+
+                                Литература
+
+                            </span>
+
+
+
+                            <span class="lesson-time-card">
+
+                                12:00 — 12:45
+
+                            </span>
+
+
+
+                        </div>
+
+
+
+                        <h3>
+
+                            Литература
+
+                        </h3>
+
+
+
+                        <p>
+
+                            Прочитать следующую главу.
+
+                        </p>
+
+
+
+                    </div>
+
+
+
+
+
+                    <label class="check">
+
+
+
+                        <input
+
+                            type="checkbox"
+
+                            class="task-check">
+
+
+
+                        <span></span>
+
+
+
+                    </label>
+
+
+
+                </article>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <section
+
+        class="section important-section"
+
+        id="important">
+
+
+
+        <div class="container">
+
+
+
+            <div class="important-box">
+
+
+
+                <div>
+
+
+
+                    <span class="eyebrow">
+
+                        НЕ ЗАБУДЬ
+
+                    </span>
+
+
+
+                    <h2>
+
+                        Сегодня важно
+
+                    </h2>
+
+
+
+                    <p>
+
+                        Здесь будут отображаться твои
+
+                        ближайшие самостоятельные,
+
+                        контрольные и важные задания.
+
+                    </p>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="important-items">
+
+
+
+                    <div class="important-item">
+
+
+
+                        <div class="important-icon pink">
+
+                            ✎
+
+                        </div>
+
+
+
+                        <div>
+
+                            <strong>
+
+                                Самостоятельная по алгебре
+
+                            </strong>
+
+
+
+                            <span>
+
+                                Завтра · 09:00
+
+                            </span>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                    <div class="important-item">
+
+
+
+                        <div class="important-icon green">
+
+                            ✓
+
+                        </div>
+
+
+
+                        <div>
+
+                            <strong>
+
+                                Сдать конспект по истории
+
+                            </strong>
+
+
+
+                            <span>
+
+                                Пятница
+
+                            </span>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+</main>
+
+
+
+
+
+<footer>
+
+
+
+    <div class="container footer-inner">
+
+
+
+        <div class="logo">
+
+            <span class="logo-icon">✦</span>
+
+            Мой урок
+
+        </div>
+
+
+
+        <p>
+
+            Твоя маленькая школьная помощница ♡
+
+        </p>
+
+
+
+    </div>
+
+
+
+</footer>
+
+
+
+
+
+<div class="modal" id="modal">
+
+
+
+    <div class="modal-window">
+
+
+
+        <button
+
+            class="close-modal"
+
+            id="closeModal">
+
+            ×
+
+        </button>
+
+
+
+        <span class="eyebrow">
+
+            НОВЫЙ УРОК
+
+        </span>
+
+
+
+        <h2>
+
+            Добавить урок
+
+        </h2>
+
+
+
+
+
+        <form id="lessonForm">
+
+
+
+            <label>
+
+                Предмет
+
+
+
+                <input
+
+                    type="text"
+
+                    id="subjectInput"
+
+                    placeholder="Например, физика"
+
+                    required>
+
+            </label>
+
+
+
+
+
+            <label>
+
+                Домашнее задание
+
+
+
+                <textarea
+
+                    id="homeworkInput"
+
+                    placeholder="Что нужно сделать?"
+
+                    required>
+
+                </textarea>
+
+            </label>
+
+
+
+
+
+            <label>
+
+                Время
+
+
+
+                <input
+
+                    type="text"
+
+                    id="timeInput"
+
+                    placeholder="13:00 — 13:45"
+
+                    required>
+
+            </label>
+
+
+
+
+
+            <label class="switch-label">
+
+
+
+                <input
+
+                    type="checkbox"
+
+                    id="selfWorkInput">
+
+
+
+                <span class="switch"></span>
+
+
+
+                Самостоятельная работа
+
+
+
+            </label>
+
+
+
+
+
+            <button
+
+                class="primary-btn submit-btn"
+
+                type="submit">
+
+
+
+                Добавить урок
+
+
+
+            </button>
+
+
+
+        </form>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
